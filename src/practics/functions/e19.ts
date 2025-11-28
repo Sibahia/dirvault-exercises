@@ -5,7 +5,7 @@ interface User {
 }
 
 function fetchUsuario(id: string): Promise<User> {
-    return Promise.resolve({
+    return Promise.resolve<User>( {
         id,
         name: "Alejandro",
         age: 30,
